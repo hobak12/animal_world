@@ -208,7 +208,6 @@ const BoardInput = () => {
     setContent("");
     setUser("");
     setPW("");
-    localStorage.clear();
     navigator("/");
   };
 
@@ -217,13 +216,14 @@ const BoardInput = () => {
   const uploadImg = () => {
     const imgRef = ref(storage, `images/${uuidv4()}`);
     const imgDataUrl = localStorage.getItem("imgDataUrl");
+    localStorage.clear();
     let downloadUrl;
     if (imgDataUrl) {
       uploadString(imgRef, imgDataUrl, "data_url")
         .then((response) => {
           downloadUrl = getDownloadURL(response.ref).then((response) => {
             setFireURL(response);
-            localStorage.clear();
+
             console.log("FireURL : ", fireURL);
           });
         })
