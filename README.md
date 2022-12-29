@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Animal World
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 2022.12.22 ~ 2022.12.28
 
-## Available Scripts
+- 스파르타코딩클럽 내일배움캠프 React A반 8조 프로젝트
+  <br>
+  <br>
 
-In the project directory, you can run:
+## 사용한 기술 스택
 
-### `yarn start`
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+<br>
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 완성된 페이지
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![1](https://user-images.githubusercontent.com/95006849/209776183-69a5ce1a-6ecc-44a4-8ca3-741d20b24e7f.png)
+<br>
+<br>
 
-### `yarn test`
+## 구현한 기능
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. 메인 페이지
+   - Carousel
+   - 검색 기능
+   - 글쓰기 버튼 클릭 시 글쓰기 페이지로 이동
+   - 게시글 전체 리스트 불러오기 (hover 시 게시글의 title 보이는 기능)
+2. 글쓰기 페이지
+   - 유효성 검사 추가 (게시글 작성 시 전부 작성하지 않으면 글 등록 불가능)
+   - 이미지 업로드 기능 (firebase 사용)
+   - 반려동물 이름 작성 시 동시에 왼쪽 화면에 반려동물 이름 등록
+3. 상세 페이지
+   - 게시글 수정/삭제 기능
+     - 게시글을 작성한 사람만 수정/삭제 할 수 있도록 비밀번호 존재
+     - 비밀번호 오류 시 수정/삭제 불가능한 기능 추가
+   - 게시글 아래 댓글 기능
+     - 댓글 작성 시 유효성 검사 추가
+     - 댓글 수정/삭제 역시 작성한 사람만 가능하도록 비밀번호 존재
