@@ -1,18 +1,8 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const BoardItem = ({ board }) => {
-  const { isLoading, error } = useSelector((state) => state.boardSlice);
-
-  if (isLoading) {
-    return <div>loading...</div>;
-  }
-  if (error) {
-    return <div>{error.message}</div>;
-  }
-
   return (
     <Box>
       <DetailLink to={`/${board.id}`} key={board.id}>

@@ -223,7 +223,6 @@ const BoardInput = () => {
         .then((response) => {
           downloadUrl = getDownloadURL(response.ref).then((response) => {
             setFireURL(response);
-
             console.log("FireURL : ", fireURL);
           });
         })

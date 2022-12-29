@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 
 const BoardList = () => {
   const board = useSelector((state) => state.boardSlice.board);
+  const { isLoading, error } = useSelector((state) => state.boardSlice);
 
   //검색 기능
   const location = useLocation();
@@ -17,6 +18,13 @@ const BoardList = () => {
           search.content.includes(itemSearch)
       )
     : board;
+
+  if (isLoading) {
+    return <div>loading...</div>;
+  }
+  if (error) {
+    return <div>{error.message}</div>;
+  }
 
   return (
     <div key={board}>
